@@ -1,0 +1,14 @@
+body {
+  font-family: poppins;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.btn-query {
+  margin-top: 50px;
+  margin-left: 20px;
+  background-color: slateblue;
+  color: white;
+}
