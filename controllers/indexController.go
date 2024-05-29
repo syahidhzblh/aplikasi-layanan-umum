@@ -8,7 +8,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func NewIndex(c *gin.Context) {
+func IndexController(c *gin.Context) {
 	fp := filepath.Join("views", "index.html")
 	content, err := os.ReadFile(fp)
 	if err != nil {
