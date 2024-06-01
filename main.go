@@ -14,8 +14,10 @@ func main() {
 	r.Use(gin.Logger())
 	r.Use(gin.Recovery())
 
-	//Include static css file
+	//Include static file
+	r.Static("/scss", "./views/scss")
 	r.Static("/css", "./views/css")
+	r.Static("/js", "./views/js")
 
 	//Controller
 	r.GET("/", controllers.LoginController)
