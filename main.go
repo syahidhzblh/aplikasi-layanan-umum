@@ -2,6 +2,7 @@ package main
 
 import (
 	"aplikasi-layanan-umum/controllers"
+	"aplikasi-layanan-umum/services"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
@@ -19,9 +20,10 @@ func main() {
 	r.Static("/css", "./views/css")
 	r.Static("/js", "./views/js")
 
-	//Controller
+	//Main Route
 	r.GET("/", controllers.LoginController)
 	r.GET("/index", controllers.IndexController)
+	r.GET("/users", services.GetUser)
 
 	http.ListenAndServe(":9000", r) // listen and serve on 0.0.0.0:9000
 }
