@@ -25,5 +25,8 @@ func main() {
 	r.GET("/index", controllers.IndexController)
 	r.GET("/users", services.GetUser)
 
+	//POST Controller
+	r.POST("")
+
 	http.ListenAndServe(":9000", r) // listen and serve on 0.0.0.0:9000
 }
