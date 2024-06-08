@@ -7,10 +7,10 @@
 
     <!-- Bootstrap CSS -->
     <!-- Option 1: Include in HTML -->
-    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
     <!-- Main CSS -->
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/app.css">
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,7 +20,7 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <title>Dashboard</title>
+    <title>Test Page</title>
   </head>
   <body>
     <!-- Sidebar -->
@@ -33,7 +33,7 @@
         <hr>
         <ul class="nav nav-pills flex-column mb-auto">
           <li class="nav-item">
-            <a href="/index" class="nav-link active text-white" aria-selected="false">
+            <a href="/index" class="nav-link text-white" aria-selected="false">
               <i class="bi bi-house me-2"></i>
               <!-- <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"/></svg> -->
               Dashboard
@@ -58,7 +58,7 @@
             </a>
           </li>
           <li>
-            <a href="/test" id="btnTest" class="nav-link text-white mt-2" aria-selected="false">
+            <a href="#" id="btnTest" class="nav-link text-white mt-2 active" aria-selected="true">
               <i class="bi bi-code me-2" width="16" height="16"><use xlink:href="#grid"/></i>
               Test Features
             </a>
@@ -92,11 +92,36 @@
         </div>
       </nav>
       <!-- End of Navbar -->
-      <div id="contentTest"></div>
+      <div id="contentTest">
+        <div class="container">
+          <div class="row d-flex justify-content-center" id="includeTest">
+            <div class="col-md-4">
+              <button id="btnQuery" onclick="fetchUsers()" class="btn btn-primary btn-block m-5">Test Query</button>
+            </div>
+          </div>
+          <div id="result" class="m-5"></div>
+      </div>
       </div>
       </div>
     </div>
 
+     
+
+
+    <!-- <div class="wrapper">
+      <div class="sidebar-nav">
+        <nav class="navbar">
+          <a href="#" class="navbar-brand ms-3">Aplikasi Layanan</a>
+          <ul class="nav nav-pills flex-column mt-4 ms-3" role="tablist">
+            <li class="nav-item mt-3"><a href="#" class="nav-link active" role="tab" aria-selected="true">Dashboard</a></li>
+            <li class="nav-item mt-3"><a href="#" class="nav-link" role="tab" aria-selected="false">Layanan</a></li>
+            <li class="nav-item mt-3"><a href="#" class="nav-link" role="tab" aria-selected="false">Users</a></li>
+            <li class="nav-item mt-3"><a href="#" class="nav-link" role="tab" aria-selected="false">Setting</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="hero">Test Page</div>
+    </div> -->
     
 
     <!-- <button class="btn btn-primary">Test Color</button> -->
@@ -109,16 +134,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/main.js"></script>
-    <!-- <script>
-      $(document).ready(function(){
-        $('#btnTest').click(function(){
-          $('#contentTest').load('test.html');
-        });
-      });
-    </script> -->
-
-
+    <script src="../js/main.js"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

@@ -9,6 +9,9 @@ document.querySelectorAll('.nav-link').forEach(link => {
     });
 });
 
+const buttonQuery = document.getElementById('btnQuery');
+// buttonQuery.style.display = "none";
+
 function fetchUsers() {
     fetch('/users')
         .then(response => response.json())
@@ -33,6 +36,18 @@ function fetchUsers() {
 function bypassIndex() {
     location.replace('/index');
 }
+
+// function showFeatures() {
+//     let ariaTrue = document.getElementById('btnTest').classList.contains('active');
+//     // let ariaFalse = buttonQuery.getAttribute('aria-selected', 'false');
+
+//     if (ariaTrue === true) {
+//         buttonQuery.style.display = 'block';
+//     } else {
+//         buttonQuery.style.display = 'none';
+//     }
+//     return
+// }
 
 
 
